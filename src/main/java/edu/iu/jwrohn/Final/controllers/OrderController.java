@@ -22,7 +22,7 @@ public class OrderController {
         this.orderRepository = orderRepository;
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public int add(@RequestBody Order order) {
         String username = getTheCurrentLoggedInCustomer();
         order.setCustomerUserName(username);
@@ -51,7 +51,7 @@ public class OrderController {
         return ResponseEntity.status(HttpStatus.OK).body(orders);
     }
 
-    @PostMapping
+    @PostMapping("/search")
     public ResponseEntity<List<Order>> search(@RequestBody Order order) {
         String username = getTheCurrentLoggedInCustomer();
         System.out.println(username);
@@ -62,6 +62,4 @@ public class OrderController {
         List<Order> orders = (List<Order>) orderRepository.findAll(example);
         return ResponseEntity.status(HttpStatus.OK).body(orders);
     }
-
-
 }

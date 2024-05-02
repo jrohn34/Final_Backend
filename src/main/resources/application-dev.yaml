@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:6001/spring-2024
+    url: jdbc:postgresql://localhost:6001/Final
     username: postgres
     password: password
 
@@ -15,14 +15,6 @@ spring:
       mode: always
 
 
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: TRACE
-        orm:
-          jdbc:
-            bind: TRACE
 
 
 

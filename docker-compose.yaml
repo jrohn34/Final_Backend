@@ -8,21 +8,3 @@ services:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: Final
-
-  database-demo-service:
-    image: database-demo-service
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: Final
-    ports:
-      - "6002:8085"
-    environment:
-      - server.port=8085
-      - spring.datasource.url=jdbc:postgresql://demo-database:5432/spring-2024
-      - spring.datasource.username=postgres
-      - spring.datasource.password=password
-    restart: "no"
-    depends_on:
-      - demo-database
-
