@@ -1,8 +1,8 @@
-package edu.iu.habahram.databsedemo.security;
+package edu.iu.jwrohn.Final.security;
 
 
-import edu.iu.habahram.databsedemo.model.Customer;
-import edu.iu.habahram.databsedemo.repository.CustomerRepository;
+import edu.iu.jwrohn.Final.model.Customer;
+import edu.iu.jwrohn.Final.repository.CustomerRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

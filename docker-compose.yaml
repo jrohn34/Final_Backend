@@ -1,20 +1,20 @@
 services:
   demo-database:
     image: postgres:alpine
-    container_name: demo-database
+    container_name: Final
     ports:
       - "6001:5432"
     environment:
       POSTGRES_USERNAME: postgres
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: spring-2024
+      POSTGRES_DB: Final
 
   database-demo-service:
     image: database-demo-service
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: database-demo-service
+    container_name: Final
     ports:
       - "6002:8085"
     environment:

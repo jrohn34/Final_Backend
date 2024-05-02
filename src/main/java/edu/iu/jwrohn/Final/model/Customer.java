@@ -1,4 +1,4 @@
-package edu.iu.habahram.databsedemo.model;
+package edu.iu.jwrohn.Final.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

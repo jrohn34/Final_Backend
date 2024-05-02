@@ -8,11 +8,11 @@
 		<version>3.2.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>edu.iu.habahram</groupId>
-	<artifactId>database-demo</artifactId>
+	<groupId>edu.iu.jwrohn</groupId>
+	<artifactId>Final</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>database-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Final</name>
+	<description>Final</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
